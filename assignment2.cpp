@@ -38,7 +38,7 @@ double calculate_standard_deviation(const std::vector<double>& data)
   {
     sum += std::pow(value - mean, 2);
   }
-  return std::sqrt(sum / data.size());
+  return std::sqrt(sum / (data.size() - 1));
 }
 // Calculate standard error in the mean
 double calculate_standard_error(const std::vector<double>& data)
